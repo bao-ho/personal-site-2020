@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel="stylesheet" href="./Styles/classic_style.css" id="local-style-sheet">
+    <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/clear-sans" type="text/css"/>
+    <script src="https://kit.fontawesome.com/9cce9d228e.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <!-- MAIN INTERFACE -->
+    <div class="main-wrapper">
+        <div class="info">
+            <div id="info-game-name">2048</div>
+            <div id="info-score">Score</div>
+            <div id="info-best-score">Best</div>
+            <div class="menu">
+                <i id="menu-volume" class="fas fa-volume-up"></i>
+                <i id="menu-pallet" class="fas fa-palette"></i>  
+                <i id="menu-dark-mode" class="fas fa-sun"></i>
+            </div>
+        </div>
+        <!-- GAME GRID -->
+        <div id="game">
+            <div class="game-node"></div>
+            <div class="game-node"></div>
+            <div class="game-node"></div>
+            <div class="game-node"></div>
+            <div class="game-node"></div>
+            <div class="game-node"></div>
+            <div class="game-node"></div>
+            <div class="game-node"></div>
+            <div class="game-node"></div>
+            <div class="game-node"></div>
+            <div class="game-node"></div>
+            <div class="game-node"></div>
+            <div class="game-node"></div>
+            <div class="game-node"></div>
+            <div class="game-node"></div>
+            <div class="game-node"></div>
+        </div>
+    </div>
+
+    <div id="author-name">by Bao Ho</div>
+    
+    <!-- WINNING OVERLAY -->
+    <div class="overlay" id="overlay-winning">
+        <div class="overlay-message" id="overlay-message-winning">You Win!</div>
+        <div class="overlay-button" id="overlay-button-continue">Yay, Continue!</div>
+    </div class="overlay">
+
+    <!-- GAMEOVER OVERLAY -->
+    <div class="overlay" id="overlay-game-over">
+        <div class="overlay-message" id="overlay-message-game-over">Game Over!</div>
+        <div class="overlay-button" id="overlay-button-new-game">New Game</div>
+    </div class="overlay">
+    
+    <script src="2048.js"></script>
+</body>
+</html>
